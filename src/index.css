@@ -1,3 +1,113 @@
-body{
-  background-color: #222;
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box; /* THE UNIVERSAL LAW, DAMMIT! */
+}
+
+body {
+  background-color: #e9e9e9;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+h1 {
+  padding: 1rem;
+  text-align: center;
+}
+
+.game-container {
+  padding: 5rem;
+  display: grid;
+  grid-template-columns: auto 1fr; /* First column wraps the board's content */
+  align-items: start; /* Align everything to the top for a clean look */
+  gap: 4rem; 
+}
+
+/* The Golem's Board */
+.board-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px; /* A smaller gap looks sharper */
+}
+
+/* Each Cell of the Massacre */
+.cell {
+  border: 1px solid black;
+  border-radius: .25rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 6rem; /* Adjusted to fit nicely */
+  font-weight: bold;
+  /* Back to battle-tested reinforced concrete */
+  width: 120px;
+  height: 120px;
+}
+
+/* The Beast's Control Panel */
+.info-panel {
+  grid-column: 2 / 3;
+}
+
+.info-panel h3 {
+  padding: 1rem 0;
+}
+
+/* Form for recruiting warriors */
+.player-setup {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 2rem 0;
+  font-size: 1.2rem;
+}
+
+input {
+  border: none;
+  outline: none;
+  padding-left: .8rem;
+  border-radius: .25rem;
+  height: 1.5rem;
+}
+
+input:focus {
+  transition: 300ms;
+  box-shadow: 0 0 5px rgba(48, 146, 29, 0.5); 
+  border: 1px solid rgba(48, 146, 29, 0.8);
+}
+
+/* Display for the active players */
+.players-display p.players-text {
+  padding: 2rem 0;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+/* The button to unleash hell */
+.play-btn {
+  margin-top: 1rem;
+  border: none;
+  font-size: 1rem;
+  border-radius: .25rem;
+  padding: .4rem 1.2rem;
+  color: #fff;
+  background-color: rgb(48, 146, 29);
+  cursor: pointer;
+}
+
+.play-btn:hover {
+  transition: 300ms;
+  background-color: rgb(17, 92, 2);
+}
+
+/* The emperor's balcony to announce the winner */
+#winner-display {
+  font-size: 1.5rem;
+  padding-top: 2rem;
+  font-weight: bold;
+  color: #00723dd3;
+}
+
+/* The invisibility cloak */
+.hidden {
+  display: none;
 }

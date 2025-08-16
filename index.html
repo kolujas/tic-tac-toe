@@ -7,7 +7,38 @@
   <title>Tic Tac Toe</title>
 </head>
 <body>
-  
+  <h1>Juego Ta Te Ti</h1>
+  <div class="game-container">
+    <div class="board-container hidden">
+      <div class="cell"></div>
+      <div class="cell"></div>
+      <div class="cell"></div>
+      <div class="cell"></div>
+      <div class="cell"></div>
+      <div class="cell"></div>
+      <div class="cell"></div>
+      <div class="cell"></div>
+      <div class="cell"></div>
+    </div>
+    <div class="info-panel">
+      <h3>Jugadores</h3>
+      <div class="player-setup">
+        <div>
+          <label for="p1">Jugador 1</label>
+          <input type="text" id="p1">
+        </div>
+        <div>
+          <label for="p2">Jugador 2</label>
+          <input type="text" id="p2">
+        </div>
+        <div>
+          <button class="play-btn">Jugar</button>
+        </div>
+      </div>
+      <div class="players-display"></div>
+      <p id="winner-display"></p>
+    </div>
+  </div>
   <script src="./src/index.js"></script>
 </body>
 </html>
