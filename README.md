@@ -4,7 +4,7 @@ A classic Tic-Tac-Toe game built with vanilla JavaScript, HTML, and CSS, focusin
 
 ## Live Demo
 
-[**Click here to play the game!**](https://vercel)
+[**Click here to play the game!**](https://tic-tac-toe-lake-sigma.vercel.app/)
 
 ## Project Overview
 
